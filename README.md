@@ -59,23 +59,23 @@ Tingkat kesulitan meningkat secara dinamis berdasarkan jumlah skor:
 ## 1. Menu
 Menu dari FlappyBird
 <br>
-<img src="FlappyBird/src/documentation/menu.png" width=200>
+<img src="documentation/menu.png" width=200>
 
 ## 2. Wave
 Ketika wave 0, jarak antar pipa secara vertikal dan horizontal lebih jauh
 <br>
-<img src="FlappyBird/src/documentation/wave0.png" width=200>
+<img src="documentation/wave0.png" width=200>
 <br>
 Ketika wave 3, jarak antar pipa secara vertikal dan horizontal lebih dekat
 <br>
-<img src="FlappyBird/src/documentation/wave3.png" width=200>
+<img src="documentation/wave3.png" width=200>
 
 ## 3. Died
 Mati ketika jatuh, menabrak, dan terbang terlalu tinggi
 <br>
-<img src="FlappyBird/src/documentation/dieddown.png" width=200>
-<img src="FlappyBird/src/documentation/diednabrak.png" width=200>
-<img src="FlappyBird/src/documentation/diedup.png" width=200>
+<img src="documentation/dieddown.png" width=200>
+<img src="documentation/diednabrak.png" width=200>
+<img src="documentation/diedup.png" width=200>
 <br>
 
 ## 4. Video Gameplay
