@@ -1,15 +1,7 @@
 # TP6DPBO2425C1
 java swing flappybird but have wave instead of increment overtime
 
-
-Berikut adalah rancangan `README.md` yang sesuai dengan kode Anda saat ini. Dokumen ini dibuat ringkas namun mencakup desain program, penjelasan alur, serta detail teknis tanpa mengubah nama kelas/variabel apa pun.
-
----
-
 # FlappyBird Manuk
-
-Proyek ini adalah implementasi sederhana dari game **FlappyBird** menggunakan Java Swing dan AWT. Pemain mengendalikan seekor burung untuk melewati rintangan pipa yang terus bergerak.
-
 ## 1. Desain Program (Arsitektur Kelas)
 
 Program ini menggunakan pola arsitektur **MVC sederhana (Model-View-Controller)** yang dimodifikasi:
