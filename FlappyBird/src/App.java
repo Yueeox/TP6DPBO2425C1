@@ -3,6 +3,18 @@ import javax.swing.*;
 public class App {
     public static void main(String[] args) {
 
+        Object[] options = {"Start Game", "Exit"};
+        int choice = JOptionPane.showOptionDialog(null,
+                "Welcome to Flappy Manuk!\nUse SPACE to Hibeur.",
+                "Main Menu",
+                JOptionPane.YES_NO_OPTION,
+                JOptionPane.INFORMATION_MESSAGE,
+                null, options, options[0]);
+
+        if (choice == 1 || choice == JOptionPane.CLOSED_OPTION) {
+            System.exit(0); // Keluar jika pilih Exit atau close menu
+        }
+
         // membuat frame dan memanggil semua kelas yang dibuuhkan untuk dijalankan
         JFrame frame = new JFrame("FlappyBird");
         frame.setDefaultCloseOperation((JFrame.EXIT_ON_CLOSE));
