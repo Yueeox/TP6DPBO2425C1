@@ -87,4 +87,4 @@ Mati ketika jatuh, menabrak, dan terbang terlalu tinggi
 <br>
 
 ## 4. Video Gameplay
-[![Video Gameplay]](FlappyBird/src/documentation/gameplay.mp4)
+[![Video Gameplay]](documentation/gameplay.mp4)
