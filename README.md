@@ -12,7 +12,6 @@ Program ini menggunakan pola arsitektur **MVC sederhana (Model-View-Controller)*
 *   **`Player.java` (Model):** Menyimpan state burung (posisi `posX`, `posY`, `width`, `height`, `image`, `velocityY`). Memiliki method `getBounds()` untuk mendeteksi tabrakan.
 *   **`Pipe.java` (Model):** Menyimpan state pipa (posisi, ukuran, `image`, `velocityX`, `passed`). Juga memiliki method `getBounds()` untuk hitbox.
 *   **`Sound.java` (Utility):** Mengelola pemutaran audio menggunakan `javax.sound.sampled.Clip`. Memuat file BGM (`bgm.wav`), suara lompat (`jump.wav`), dan suara skor (`poin.wav`).
-*   **`FontLoader.java` (Utility - jika ada):** Memuat font kustom (jika menggunakan font eksternal).
 
 ## 2. Penjelasan Alur Permainan
 
