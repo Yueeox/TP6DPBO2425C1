@@ -1,15 +1,7 @@
 # TP6DPBO2425C1
 java swing flappybird but have wave instead of increment overtime
 
-
-Berikut adalah rancangan `README.md` yang sesuai dengan kode Anda saat ini. Dokumen ini dibuat ringkas namun mencakup desain program, penjelasan alur, serta detail teknis tanpa mengubah nama kelas/variabel apa pun.
-
----
-
 # FlappyBird Manuk
-
-Proyek ini adalah implementasi sederhana dari game **FlappyBird** menggunakan Java Swing dan AWT. Pemain mengendalikan seekor burung untuk melewati rintangan pipa yang terus bergerak.
-
 ## 1. Desain Program (Arsitektur Kelas)
 
 Program ini menggunakan pola arsitektur **MVC sederhana (Model-View-Controller)** yang dimodifikasi:
@@ -67,24 +59,24 @@ Tingkat kesulitan meningkat secara dinamis berdasarkan jumlah skor:
 ## 1. Menu
 Menu dari FlappyBird
 <br>
-<img src="FlappyBird/src/documentation/menu.png" width=200>
+<img src="documentation/menu.png" width=200>
 
 ## 2. Wave
 Ketika wave 0, jarak antar pipa secara vertikal dan horizontal lebih jauh
 <br>
-<img src="FlappyBird/src/documentation/wave0.png" width=200>
+<img src="documentation/wave0.png" width=200>
 <br>
 Ketika wave 3, jarak antar pipa secara vertikal dan horizontal lebih dekat
 <br>
-<img src="FlappyBird/src/documentation/wave3.png" width=200>
+<img src="documentation/wave3.png" width=200>
 
 ## 3. Died
 Mati ketika jatuh, menabrak, dan terbang terlalu tinggi
 <br>
-<img src="FlappyBird/src/documentation/dieddown.png" width=200>
-<img src="FlappyBird/src/documentation/diednabrak.png" width=200>
-<img src="FlappyBird/src/documentation/diedup.png" width=200>
+<img src="documentation/dieddown.png" width=200>
+<img src="documentation/diednabrak.png" width=200>
+<img src="documentation/diedup.png" width=200>
 <br>
 
 ## 4. Video Gameplay
-[![Video Gameplay]](FlappyBird/src/documentation/gameplay.mp4)
+[![Video Gameplay]](documentation/gameplay.mp4)

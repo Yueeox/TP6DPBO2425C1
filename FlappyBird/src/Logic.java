@@ -36,6 +36,11 @@ public class Logic implements ActionListener, KeyListener {
     int score = 0;
     int pipeVelocityX = -2;
 
+    // Variabel untuk background bergerak
+    int bgX1 = 0;
+    int bgX2 = frameWidth;
+    int bgSpeed = -1; // Kecepatan background (negatif = bergerak ke kiri)
+
 
     View view;
     Sound sound;
@@ -78,6 +83,9 @@ public class Logic implements ActionListener, KeyListener {
 
     // menentukan posisi player ketika game dimulai
     public void setupGame() {
+
+        bgX1 = 0;
+        bgX2 = frameWidth;
         // semuanya direset ke awal
         player.setPosX(playerStartPosX);
         player.setPosY(playerStartPosY);
@@ -107,6 +115,9 @@ public class Logic implements ActionListener, KeyListener {
     public Image getBackground() {
         return background;
     }
+
+    public int getBgX1() { return bgX1; }
+    public int getBgX2() { return bgX2; }
 
     // jarak antara pipa atas dan bawah
     int openingSpace = 200;
@@ -152,7 +163,26 @@ public class Logic implements ActionListener, KeyListener {
 
     // untuk gerakan player
     public void move(){
-        if (gameOver) return;
+
+        // Background bergerak JIKA game belum dimulai DAN belum game over
+        if (!gameOver) {
+            bgX1 += bgSpeed;
+            bgX2 += bgSpeed;
+
+            // Jika gambar pertama sudah habis di layar kiri, pindahkan ke kanan
+            if (bgX1 <= -frameWidth) {
+                bgX1 = frameWidth;
+            }
+            // Jika gambar kedua sudah habis di layar kiri, pindahkan ke kanan
+            if (bgX2 <= -frameWidth) {
+                bgX2 = frameWidth;
+            }
+        }
+
+        if (gameOver) {
+            playerFalling();
+            return;
+        }
         if (!isStarted) return;
 
         player.setVelocity(player.getVelocity() + gravity);
@@ -233,4 +263,16 @@ public class Logic implements ActionListener, KeyListener {
 
     public int getScore() { return score; }
     public boolean isGameOver() { return gameOver; }
+
+    public void playerFalling() {
+        if (player.getPosY() < frameHeight) { // Jika belum menyentuh tanah
+            player.setVelocity(player.getVelocity() + gravity);
+            player.setPosY(player.getPosY() + player.getVelocity());
+
+            // Opsional: rotasi burung atau batasi kecepatan jatuh
+            if (player.getVelocity() > 15) {
+                player.setVelocity(15); // Batas kecepatan jatuh maksimal
+            }
+        }
+    }
 }

@@ -43,8 +43,12 @@ public class View extends JPanel{
     }
 
     public void draw(Graphics g){
+        // 1. Gambar Background (Diperbarui agar bisa bergerak)
         if (logic.getBackground() != null) {
-            g.drawImage(logic.getBackground(), 0, 0, width, height, null);
+            // Gambar background pertama
+            g.drawImage(logic.getBackground(), logic.getBgX1(), 0, width, height, null);
+            // Gambar background kedua (sebagai sambungan)
+            g.drawImage(logic.getBackground(), logic.getBgX2(), 0, width, height, null);
         } else {
             // Jika gambar gagal dimuat, fallback ke warna cyan
             g.setColor(Color.cyan);
